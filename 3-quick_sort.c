@@ -51,7 +51,7 @@ int Partition(int *A, int start, int end, size_t size)
  * @end: end index.
  * @size: the size of the array.
  *
- * Return: void
+ * Return: nothing.
  */
 void QuickSort(int *A, int start, int end, size_t size)
 {
