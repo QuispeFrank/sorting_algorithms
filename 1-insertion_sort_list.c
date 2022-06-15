@@ -41,7 +41,7 @@ void check_before(listint_t *b, listint_t **list)
  */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *p = NULL;
+	listint_t *p; 
 
 	if (list == NULL || *list == NULL)
 		return;
