@@ -41,9 +41,13 @@ void check_before(listint_t *b, listint_t **list)
  */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *p = (*list)->next;
+	listint_t *p = NULL;
+
+	if (*list == NULL)
+		return;
 
 	/* start checking from second node */
+	p = (*list)->next;
 	while (p != NULL)
 	{
 		if (p->prev->n > p->n)
